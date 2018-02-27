@@ -93,6 +93,7 @@ validator.fit(X_train, y_train)
 print('The parameters of the best model are: ')
 print(validator.best_params_)
 '''
+The parameters of the best model are: 
 {'dense_layer_sizes': [128, 128], 'nb_conv': 3, 'nb_epoch': 6, 'nb_filters': 8, 'nb_pool': 2}
 
 
