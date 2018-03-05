@@ -54,8 +54,9 @@ X_test /= 255
 Y_train = np_utils.to_categorical(y_train, 10)
 Y_test = np_utils.to_categorical(y_test, 10)
 model=make_model()
+model.summary()
 network_history = model.fit(X_train, Y_train, batch_size=128,
-                            epochs=100, verbose=1, validation_data=(X_test, Y_test))
+                            epochs=200, verbose=1, validation_data=(X_test, Y_test))
 import matplotlib.pyplot as plt
 
 plt.figure()
